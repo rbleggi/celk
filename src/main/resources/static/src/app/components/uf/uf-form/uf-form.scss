@@ -1,0 +1,21 @@
+.uf-form {
+  &__label {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__input {
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+
+  &__btn {
+    font-size: 1.4rem;
+    margin-top: 2.4rem;
+    padding: 0.9rem;
+  }
+
+  &__text {
+    color: #ff0000;
+  }
+}

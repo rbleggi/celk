@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// abstracts
+@import 'abstracts/config';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+// vendor
+@import 'vendor/bootstrap';
+
+// base
+@import 'base/animations';
+@import 'base/base';
+@import 'base/utils';
+
+// components
+@import '../app/common/header/header.scss';
+@import '../app/common/footer/footer.scss';
+@import '../app/components/uf/uf.scss';
+@import '../app/components/uf/uf-form/uf-form.scss';
+@import '../app/components/uf/uf-lista/uf-lista.scss';
+
+// layout
+
+// pages
+
+// themes

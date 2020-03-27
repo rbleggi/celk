@@ -1,0 +1,16 @@
+$base-color-primary: #5b6e7f;
+$base-color-primary-dark: darken($base-color-primary, 10%);
+$base-color-primary-light: lighten($base-color-primary, 10%);
+
+$base-color-secondary: #49a0b6;
+$base-color-primary-dark: darken($base-color-primary, 10%);
+$base-color-primary-light: lighten($base-color-primary, 10%);
+
+$base-font-size: 1.6rem;
+
+$base-outline: 1px solid $base-color-secondary;
+
+$base-selection-background: $base-color-secondary;
+$base-selection-color: #fff;
+
+$base-font-stack: sans-serif;

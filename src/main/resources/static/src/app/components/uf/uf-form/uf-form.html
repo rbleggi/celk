@@ -1,0 +1,33 @@
+<form class="uf-form" ng-submit="$ctrl.onSubmit()">
+  <div class="form-row">
+    <div class="col-md-5 col-sm-12">
+      <div class="form-group">
+        <label class="uf-form__label" for="nome">Estado</label>
+        <input type="text" class="uf-form__input form-control" id="nome" aria-describedby="nomeHelp"
+               ng-model="$ctrl.uf.nome" pattern="[a-zA-Z]*"
+               title="O nome do estado deve conter apenas letras."
+               placeholder="Digite o nome do Estado"
+               required>
+        <small id="nomeHelp" class="uf-form__text form-text text-muted">O nome do estado deve conter apenas
+          letras.</small>
+      </div>
+    </div>
+
+    <div class="col-md-5 col-sm-12">
+      <div class="form-group">
+        <label class="uf-form__label" for="sigla">UF(Sigla)</label>
+        <input type="text" class="uf-form__input form-control" id="sigla" aria-describedby="siglaHelp"
+               ng-model="$ctrl.uf.sigla"
+               placeholder="Digite o UF(Sigla)" maxlength="2"
+               pattern="[A-Z]{2}" title="A sigla do estado deve conter apenas 2 letras maiúsculas." required>
+        <small id="siglaHelp" class="uf-form__text form-text text-muted">A sigla do estado deve conter apenas 2 letras
+          maiúsculas.</small>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-12">
+      <button type="submit" class="uf-form__btn btn btn-primary btn-block">{{ !$ctrl.uf.id ? 'Adicionar' : 'Atualizar' }}
+      </button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,22 @@
+<main class="uf">
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <uf-form uf="$ctrl.newUf" on-add-uf="$ctrl.addUf($event);"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <uf-lista class="uf__lista" ufs="$ctrl.ufs" on-edit-uf="$ctrl.editUf($event);"
+                    on-delete-uf="$ctrl.deleteUf($event);"/>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

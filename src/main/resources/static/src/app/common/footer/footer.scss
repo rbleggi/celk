@@ -1,0 +1,14 @@
+@import '../../../styles/abstracts/variables';
+
+.celk-footer {
+  background: $base-color-secondary;
+  padding: 1.5rem 0;
+
+  &__info {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}

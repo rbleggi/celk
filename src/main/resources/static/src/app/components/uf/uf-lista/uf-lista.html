@@ -1,0 +1,32 @@
+<div class="uf-lista table-responsive">
+  <table ng-table="ufs" class="table table-hover">
+    <thead>
+    <tr>
+      <th class="uf-lista__col" scope="col">Estado</th>
+      <th class="uf-lista__col" scope="col">Uf</th>
+      <th class="uf-lista__col" scope="col">Cadastro</th>
+      <th class="uf-lista__col" scope="col">Atualização</th>
+      <th class="uf-lista__col" scope="col"></th>
+      <th class="uf-lista__col" scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="uf in $ctrl.ufs">
+      <td>{{uf.nome}}</td>
+      <td>{{uf.sigla}}</td>
+      <td>{{uf.dataHoraCadastro | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+      <td>{{uf.dataHoraAtualizacao | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+      <td>
+        <button type="submit" class="uf-lista__btn btn btn-primary btn-block" ng-click="$ctrl.onButtonEditUF(uf)">
+          Editar
+        </button>
+      </td>
+      <td>
+        <button type="submit" class="uf-lista__btn btn btn-danger btn-block" ng-click="$ctrl.onButtonDeleteUF(uf)">
+          Excluir
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

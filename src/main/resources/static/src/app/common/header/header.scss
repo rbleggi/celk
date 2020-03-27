@@ -1,0 +1,13 @@
+@import '../../../styles/abstracts/variables';
+
+.celk-header {
+  background: $base-color-secondary;
+  padding: 1.5rem 0;
+
+  &__logo {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
