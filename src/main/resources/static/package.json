@@ -13,7 +13,8 @@
     "@types/angular": "^1.6.57",
     "@types/angular-ui-router": "^1.1.40",
     "angular": "^1.7.9",
-    "angular-ui-router": "^1.0.25"
+    "angular-ui-router": "^1.0.25",
+    "sweetalert2": "^9.10.6"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.5",
